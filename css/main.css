@@ -171,6 +171,18 @@ aside {
   justify-content: center;
 }
 
+[type="text"] {  
+  padding: 1em;
+  margin-bottom: 20px;
+  width: 90%
+}
+
+ [type="button"]{
+  padding: 20px 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
 .features {
   display: flex;
   justify-content: center;
@@ -368,6 +380,10 @@ aside {
 
   /*--------------MAIN AREA-------------*/
 
+  .hero-area h1{
+    margin: 0;
+    width: 80%;
+  }
   aside .content-wrapper{
     margin: 50px 0;
     display: flex;
@@ -404,6 +420,9 @@ footer .content-wrapper{
   justify-content: space-between;
 }
 
+footer .content-wrapper{
+  justify-content: space-around;
+}
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -476,6 +495,41 @@ footer .content-wrapper{
 /*----------------DESKTOP STYLES---------------*/
 @media only screen and (min-width: 1200px){
 
+  .content-wrapper{
+    max-width: 960px;
+  }
+  header .content-wrapper{
+    margin: 15px 0;
+  }
+  nav{
+    width: 25%;
+  }
+
+  footer .content-wrapper{
+    justify-content: space-between;
+  }
+
+  /*-------------MAIN--------------*/
+
+  .hero-area .content-wrapper h1{
+    width: 70%; 
+  }
+  aside .content-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  aside .content-wrapper .form-description, aside .content-wrapper .form{
+    width: 30%;
+  }
+
+  .features article {
+    flex-basis: 26%;
+  }
+
+  /*-----------------ABOUT---------------------*/
+  mission .content-wrapper h2{
+    width: 90%;
+  }
 }
 
 /* ==========================================================================
