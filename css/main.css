@@ -131,10 +131,11 @@ p{
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 
 }
 
@@ -143,11 +144,13 @@ address{
 }
 
 .content-wrapper {
+  width: 90%;
+  margin: 50px 0;
 
 }
 
 h1{
-  font-size: 3em;
+  font-size: 2.25em;
   line-height: 43px;
   font-weight: 500;
 }
@@ -180,22 +183,33 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure{
+  width: 60%;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
-  padding: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
   color: #3a3a3a;
 }
 header nav {
-  display: flex;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
 }
 header nav ul {
-  margin: 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
   list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 
@@ -240,8 +254,17 @@ footer .copyright{
 /*------------HOMEPAGE-------------*/
 
 .hero-area {
+  background: url(../img/retreat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
+  min-height: 500px;
+}
+
+.hero-area h1{
+  width: 90%;
 }
 
 aside {
@@ -250,24 +273,37 @@ aside {
   background-color: #527158;
 }
 
-[type="text"] {  
+aside .form{
+  margin-top: 30px;
+}
+
+input[type=text] { 
+  box-sizing: border-box; 
   padding: 1em;
-  margin-bottom: 20px;
-  width: 90%;
-  font-size: 1.12em;
-  font-weight: 500;
+  width: 100%;
+  font-style: italic;
   color: #2a423a;
 }
 
- [type="button"]{
+input[type=button]{
+  width: 100%;
   padding: 20px 0;
   margin-top: 20px;
-  width: 100%;
   background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
 .features {
+  background: url(../img/retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -302,6 +338,9 @@ aside {
   line-height: 30px;
 }
 
+.reviews figure{
+  width: 100%;
+}
 .reviews h3 {
   margin: 20px 0;
   width: 55%;
@@ -319,6 +358,10 @@ aside {
   display: flex;
   justify-content: center;
   background-color: #2a423a;
+}
+
+.contact-section h2{
+  width: 90%;
 }
 
 .contact-content p {
@@ -463,12 +506,17 @@ aside {
     justify-content: space-between;
   }
 
+  header figure{
+    width: 30%;
+  }
+
   header nav{
     width: 20%;
   }
 
   header nav ul{
     justify-content: space-between;
+    padding-right: 20px;
   }
 
   .header-divider{
@@ -476,11 +524,30 @@ aside {
   }
 
   /*--------------MAIN AREA-------------*/
+  h1{
+    font-size: 3em;
+    line-height: 48px;
+  }
+  h2{
+    font-size: 2.25em;
+    line-height: 48px;
+  }
+  h3{
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+  h4{
+    font-size: 1.5em;
 
+  }
+  .hero-area{
+    min-height: 600px;
+  }
   .hero-area h1{
     margin: 0;
     width: 80%;
   }
+
   aside .content-wrapper{
     margin: 50px 0;
     display: flex;
@@ -500,14 +567,33 @@ aside {
     flex-basis: 50%;
   }
 
-  .reviews article {
+  .reviews .content-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .reviews h2{
+    width: 80%;
+
+  }
+  .reviews figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .reviews article {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
   }
 
-  .reviews article div {
-    width: 50%;
+  .reviews article h3{
+    width: 80%;
+    margin-top: 0px;
   }
+
 
 /*--------------FOOTER___________*/
 
@@ -528,6 +614,14 @@ footer .content-wrapper{
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .contact h4{
+    font-size: 1.5em;
+  }
+
+  footer p{
+    line-height: 18px;
   }
 
   footer.copyright {
@@ -561,7 +655,7 @@ footer .content-wrapper{
   height: 650px;
 }
 
-.contact-section .contact-wrapper h2{
+.contact-section h2{
   width: 80%;
 }
 
@@ -583,6 +677,11 @@ footer .content-wrapper{
 
 .faq h2{
   width: 100%;
+}
+
+.faq h4, p{
+  font-size: 1.14em;
+  line-height: 15.75px;
 }
 
 }
