@@ -86,7 +86,80 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*--------BASE HEADER - FOOTER STYLES----------*/
+/*--------------GENERAL STYLES--------------*/
+
+html {
+  font-size: 1rem;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+ul,li { 
+  font-size: 1.12em;
+  font-weight: bold;
+  
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.87em;
+  font-weight: 500;
+
+}
+
+h3,h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.12em;
+  font-weight: 500;
+
+}
+
+p{
+  font-size: 1.14em;
+  line-height: 18px;
+
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address{
+  font-style: normal;
+}
+
+.content-wrapper {
+
+}
+
+h1{
+  font-size: 3em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
+
+
+
+   /*--------BASE HEADER - FOOTER STYLES----------*/
+
+header, footer{
+  background-color: #202322;
+}
 
 .content-wrapper {
   width: 90%;
@@ -111,6 +184,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   padding: 10px 0 20px 0;
+  color: #3a3a3a;
 }
 header nav {
   display: flex;
@@ -121,7 +195,9 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  list-style: none;
 }
+
 
 footer {
   display: flex;
@@ -146,6 +222,8 @@ footer .social-icons{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.31em; 
+  background-color: #527158;
 }
 
 footer .social-icons p {
@@ -169,19 +247,25 @@ footer .copyright{
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 [type="text"] {  
   padding: 1em;
   margin-bottom: 20px;
-  width: 90%
+  width: 90%;
+  font-size: 1.12em;
+  font-weight: 500;
+  color: #2a423a;
 }
 
  [type="button"]{
   padding: 20px 0;
   margin-top: 20px;
   width: 100%;
+  background-color: #2a423a;
 }
+
 
 .features {
   display: flex;
@@ -203,14 +287,19 @@ aside {
   margin: 0;
 }
 
+.features .fontawesome-icon{
+  font-size: 3.75em;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
-
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -223,11 +312,13 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -240,6 +331,7 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -253,12 +345,17 @@ aside {
 .faq .content-wrapper h2{
   margin-bottom: 40px;
   width: 80%;
+  line-height: 30px;
 }
 
 .faq-content{
   margin-bottom: 50px;
   display: flex;
   flex-flow: column wrap;
+}
+
+.faq .content h4{
+  line-height: 24px;
 }
 
 
