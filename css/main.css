@@ -224,26 +224,30 @@ footer p{
   margin: 0;
 }
 
-footer .content-wrapper{
-  width: 55%;
-}
-
 footer .contact {
   margin-bottom: 50px;
 }
-
+.social h4{
+  margin: 20px 0;
+}
 footer .social-icons{
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.31em; 
-  background-color: #527158;
+  margin-bottom: 50px;
+  width: 60%;
+  padding-left: 75px;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
 }
 
 footer .copyright{
@@ -322,9 +326,16 @@ input[type=button]{
 .features p {
   margin: 0;
 }
-
+.features-items article {
+  flex-basis: 60%;
+  text-align: center;
+}
 .features .fontawesome-icon{
   font-size: 3.75em;
+  padding: 30px 0 40px 0;
+}
+.features .features-item-description{
+  padding-bottom: 30px;
 }
 
 .reviews {
@@ -576,12 +587,14 @@ input[type=button]{
     width: 40%;
     margin: 0;
   }
-
+  .features .features-items{
+    justify-content: space-around;
+  }
   .features article{
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
 
   .reviews .content-wrapper{
@@ -615,29 +628,37 @@ input[type=button]{
 
 /*--------------FOOTER___________*/
 
-footer .content-wrapper{
+/*footer .content-wrapper{
   width: 65%;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
-footer .content-wrapper{
+/*footer .content-wrapper{
   justify-content: space-around;
-}
+}*/
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
   footer .contact {
-    margin-bottom: 0;
+    margin: 0px;
+    width: 50%;
   }
-
+  footer .social{
+    width: 50%;
+  }
   footer .contact h4{
     font-size: 1.5em;
+    padding-bottom: 40px;
+    margin: 0px;
   }
-
+  footer .social h4{
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    margin: 0px;
+  }
   footer p{
     line-height: 18px;
   }
@@ -734,6 +755,9 @@ footer .content-wrapper{
 
   footer .content-wrapper{
     justify-content: space-between;
+  }
+  footer .social-icons{
+    padding-left: 95px;
   }
 
   /*-------------MAIN--------------*/
