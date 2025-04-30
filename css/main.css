@@ -101,6 +101,7 @@ body{
 ul,li { 
   font-size: 1.12em;
   font-weight: bold;
+  margin: 0;
   
 }
 
@@ -125,7 +126,7 @@ h3,h4{
 }
 
 p{
-  font-size: 1.14em;
+  font-size: .87em;
   line-height: 18px;
 
 }
@@ -191,12 +192,10 @@ header figure{
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
-  color: #3a3a3a;
+  background-color: #3a3a3a;
 }
 header nav {
   width: 60%;
-  font-size: 1.125em;
-  font-weight: 700;
   text-transform: uppercase;
   display: flex;
 }
@@ -207,11 +206,6 @@ header nav ul {
   list-style: none;
   padding: 0;
 }
-
-header nav ul li {
-  font-size: 1.125em;
-}
-
 
 footer {
   display: flex;
@@ -224,6 +218,9 @@ footer p{
   margin: 0;
 }
 
+footer .content-wrapper{
+  margin: 50px 0 0 0;
+}
 footer .contact {
   margin-bottom: 50px;
 }
@@ -245,8 +242,8 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
   background-color: #527158;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 25px;
 }
 
@@ -269,6 +266,7 @@ footer .copyright{
 
 .hero-area h1{
   width: 90%;
+  font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
 aside {
@@ -281,12 +279,24 @@ aside .form{
   margin-top: 30px;
 }
 
+.form-description h3{
+  margin: 20px 0;
+}
+
+.form-description p{
+  margin: 0 0 30px 0; 
+}
+
+.form h3{
+  margin: 20px 0;
+}
 input[type=text] { 
   box-sizing: border-box; 
   padding: 1em;
   width: 100%;
   font-style: italic;
   color: #2a423a;
+  margin-bottom: 20px;
 }
 
 input[type=button]{
@@ -313,7 +323,7 @@ input[type=button]{
 }
 
 .features h2{
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
 }
 
 .features .features-items {
@@ -345,7 +355,7 @@ input[type=button]{
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   line-height: 30px;
 }
 
@@ -573,7 +583,7 @@ input[type=button]{
   }
   .hero-area h1{
     margin: 0;
-    width: 80%;
+    width: 85%;
   }
 
   aside .content-wrapper{
@@ -587,6 +597,10 @@ input[type=button]{
     width: 40%;
     margin: 0;
   }
+
+  .features h2{
+    margin: 0 0 20px 0;
+  }
   .features .features-items{
     justify-content: space-around;
   }
@@ -594,7 +608,7 @@ input[type=button]{
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 40%;
+    flex-basis: 34%;
   }
 
   .reviews .content-wrapper{
@@ -718,8 +732,8 @@ input[type=button]{
   width: 100%;
 }
 
-.faq h4 p{
-  font-size: 1.14em;
+.faq h4, p{
+  font-size: .87em;
   line-height: 15.75px;
 }
 
